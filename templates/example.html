@@ -10,13 +10,13 @@
 <body>
 
 
-<title>Merrill Lynch Bond Indexes</title>
+<title>Merrill Lynch Bond Yields</title>
 	<link href="../static/css/bootstrap.css" type="text/css" rel="stylesheet">
 	<link href="../static/css/main.css" type="text/css" rel="stylesheet">
 
-<h1>Merrill Lynch Bond Indexes  </h1>
+<h1>Merrill Lynch Bond Yields  </h1>
 <h4><a href="https://www.quandl.com/data/ML">Data Source</a></h4>
-<button type="button" class="btn btn-info btn-block" onClick="window.location.href = '/data'">Get Bond Data </button>
+<button type="button" class="btn btn-info btn-block" onClick="window.location.href = '/data'">Get Bond Data (Estimated Refresh Time: 80 seconds) </button>
 
 <div class="container">
 <table class="table" table id = "tab">
@@ -29,13 +29,14 @@
 </tr>
 {% for key, value in result.iteritems() %}
    <tr>
-        <th> {{ key }} </th>
+
+        <th> {{ key }}   </th>
         <td> {{ value }} </td>
    </tr>
 {% endfor %}
 </table>
+
+
 </div>
-
-
 </body>
 </html>
