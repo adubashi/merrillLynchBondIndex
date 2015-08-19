@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<body>
+<title>Merrill Lynch Bond Data</title>
+	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 	<link href="./static/main.css" type="text/css" rel="stylesheet">
+
+<h1>Merrill Lynch Bond Data </h1>
+
+<div id = "box">
+<table id = "tab">
+{% for key, value in result.iteritems() %}
+   <tr>
+        <th> {{ key }} </th>
+        <td> {{ value }} </td>
+   </tr>
+{% endfor %}
+</table>
+</div>
+
+
+</body>
+</html>

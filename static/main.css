@@ -1,0 +1,22 @@
+<head>
+<style>
+body {
+	background-image: url("finance.jpg");
+    background-repeat: repeat-x;
+}
+
+#box {
+	background-color: #d3d3d3
+}
+
+#tab {
+	width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	
+}
+</style>
+</head>
