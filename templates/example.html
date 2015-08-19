@@ -1,14 +1,32 @@
 <!doctype html>
+
 <html>
+<style>
+    body {
+        padding-top: 0px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+</style>
 <body>
-<title>Merrill Lynch Bond Data</title>
-	<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
- 	<link href="./static/main.css" type="text/css" rel="stylesheet">
 
-<h1>Merrill Lynch Bond Data </h1>
 
-<div id = "box">
-<table id = "tab">
+<title>Merrill Lynch Bond Indexes</title>
+	<link href="../static/css/bootstrap.css" type="text/css" rel="stylesheet">
+	<link href="../static/css/main.css" type="text/css" rel="stylesheet">
+
+<h1>Merrill Lynch Bond Indexes  </h1>
+<h4><a href="https://www.quandl.com/data/ML">Data Source</a></h4>
+<button type="button" class="btn btn-info btn-block" onClick="window.location.href = '/data'">Get Bond Data </button>
+
+<div class="container">
+<table class="table" table id = "tab">
+<tr>		
+			<div class="tabelLabel">
+            <th>Bond Index</th>
+            <th>Value</th>
+        	</div>
+        	
+</tr>
 {% for key, value in result.iteritems() %}
    <tr>
         <th> {{ key }} </th>
