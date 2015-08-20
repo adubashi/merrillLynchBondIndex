@@ -1,12 +1,7 @@
 # -*- coding: utf-8 -*-
 import Quandl
-import json
-from pprint import pprint
 import Database
 import databaseData
-import collections
-import threading
-import time
 
 
 myDict = {"Emerging Markets Corporate Bond Index OAS":"0",

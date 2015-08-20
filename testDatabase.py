@@ -6,7 +6,6 @@ Created on Tue Aug 18 14:42:18 2015
 """
 
 import Quandl
-import json
 from pprint import pprint
 import Database
 
